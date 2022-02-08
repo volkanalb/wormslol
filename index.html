@@ -1,0 +1,22 @@
+<html>
+	<head>
+	  <title>Worms League</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<body>
+		
+		<div class="row">
+			<center><h1 >2022 February <span class="badge badge-primary" >Current</span></h1></center>
+			<iframe id="iframe-opxxgtglxhr" src="https://keepthescore.co/embed/opxxgtglxhr/" style="width:100%;border:none;"></iframe>
+		</div>
+		<div class="row">
+			<center><h1 >2022 January <span class="badge badge-secondary" >Past</span></h1></center>
+			<iframe id="iframe-fngsfqkdmur" src="https://keepthescore.co/embed/fngsfqkdmur/" style="width:100%;border:none;"></iframe>
+		</div> 
+		
+		<script>window.onmessage = (e) => {if (e.data.hasOwnProperty("frameHeight")){document.getElementById("iframe-" + e.data.board_token).style.height = `${e.data.frameHeight}px`;}};</script>
+	</body>
+</html>
